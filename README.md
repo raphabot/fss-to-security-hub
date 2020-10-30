@@ -1,6 +1,6 @@
-# FSS to SecurityHub Project
+# FSS to Security Hub Project
 
-Simple demonstration of FSS to AWS SecurityHub integration.
+Simple demonstration of FSS to AWS Security Hub integration.
 
 Upload `fss-to-securityhub-lambda.zip` to a bucket and take note of the key.
 Start a new stack based on this template.
