@@ -1,14 +1,12 @@
-# Welcome to your CDK TypeScript project!
+# FSS to SecurityHub Project
 
-This is a blank project for TypeScript development with CDK.
+Simple demonstration of FSS to AWS SecurityHub integration.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+Upload `fss-to-securityhub-lambda.zip` to a bucket and take note of the key.
+Start a new stack based on this template.
 
-## Useful commands
+## Template Inputs
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+ * `snsScanResultTopicArn:`   FSS Results SNS Topic ARN
+ * `LambdaZipBucket`          S3 bucket for lambda zip. If your have it under s3://bucket/path/to/zip.zip, enter 'bucket' here.
+ * `LambdaZipKey`             S3 key for lambda zip. If your have it under s3://bucket/path/to/zip.zip, enter 'path/to/zip.zip' here. 

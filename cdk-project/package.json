@@ -1,0 +1,33 @@
+{
+  "name": "fss-to-securityhub",
+  "version": "0.1.0",
+  "bin": {
+    "fss-to-securityhub": "bin/fss-to-securityhub.js"
+  },
+  "scripts": {
+    "build": "tsc && cdk synth --version-reporting=false --path-metadata=false --asset-metadata=false",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "deploy": "tsc && cdk deploy --parameters snsScanResultTopicArn=arn:aws:sns:us-east-1:218213273676:All-in-one-TM-FileStorageSecurity-StorageStack-8OUSEPNEYHFO-ScanResultTopic-1XXC9FLYW8JQH"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.70.0",
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "aws-cdk": "1.70.0",
+    "ts-node": "^8.1.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-iam": "^1.71.0",
+    "@aws-cdk/aws-lambda": "^1.71.0",
+    "@aws-cdk/aws-lambda-event-sources": "^1.71.0",
+    "@aws-cdk/aws-sns": "^1.71.0",
+    "@aws-cdk/core": "1.71.0",
+    "source-map-support": "^0.5.16",
+    "uuid": "^8.3.1"
+  }
+}
